@@ -24,6 +24,20 @@ private void Start() {
     }
     
 }
+
+public GameObject getPoolObjects(){
+
+   for (int i =0;i<noOfObjets;i++ ){
+        
+        if(!pooledObj[i].activeInHierarchy){
+
+            return pooledObj[i];
+        }
+
+    }
+    return null;
+     
+}
     
   
 }
