@@ -92,6 +92,9 @@ private void OnCollisionEnter(Collision other) { //in case of rigit body
                     {
                        playSound.PlayOneShot(win, 1.0F);
                         currentPoint = 0;
+                          //.sharedMaterial.SetColor("_Color",Color.white)  ;
+                       GameObject tempPS = Instantiate(particleEffect,this.gameObject.transform.position, Quaternion.Euler(90, 0, 0));
+                        tempPS.GetComponent<ParticleSystemRenderer>().material.SetColor("_Color",Color.white)  ;
                         Destroy(this.gameObject);
                     }
         
