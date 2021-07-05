@@ -57,8 +57,8 @@ public class ballPriddictor : MonoBehaviour
                   angle = Mathf.Atan2 (v.y,v.x);
               //  TryCalculateXPositionAtHeight(h, new Vector2(temppredictedX, temppredictedY), new Vector2(v.x, v.y) , G, w,ref xPosition);
                   //   break;
-                     p.x =predictedX;
-                      p.y =predictedY;
+                     p.x =temppredictedX;
+                      p.y =temppredictedY;
                 }
                     predictedX  =temppredictedX;
                     predictedY  = temppredictedY; 

@@ -91,7 +91,7 @@ public MoveDirection direction;
         // reuse the patter 4 for the last options. 
 
         
-          //final solution matrix - array check number same substracation is  zer0 matrix 
+          //final solution matrix - array check number same substracation or division is  zer0 matrix 
          int[,] tempMatrixPattern5 =  { 
                             { currentColor, currentColor, 0, currentColor, currentColor}, 
                             { 0, 0, currentColor, 0, 0}, 
@@ -117,7 +117,8 @@ public MoveDirection direction;
     {
         for (int i = 0; i <= array2.GetUpperBound(1); ++i)
          for (int j = 0; j <= array2.GetUpperBound(0); ++i){
-            int elm =  (array[j+indx, i] ==array2[j,i])?0:1;
+            //int elm =  (array[j+indx, i] ==array2[j,i])?0:1;
+            int elm =  (array2[j,i]/ array[j+indx, i])==1?0:1;
             yield return elm;
             }
     }
