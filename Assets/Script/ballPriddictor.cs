@@ -50,7 +50,7 @@ public class ballPriddictor : MonoBehaviour
            if (temppredictedX > w/2 || temppredictedX < -w/2){
                  
                     v.x = -1 * temppredictedX ;
-                    v.y =  vo*Mathf.Sin(angle);
+                    v.y =  v.y*Mathf.Sin(angle);
                  //  tt_col = tt_col +tt;
                  tt =0;
                   vo =  Mathf.Sqrt(v.y*v.y + v.x * v.x);

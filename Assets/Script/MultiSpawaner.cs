@@ -11,8 +11,7 @@ public GameObject genericObject;
 public int noOfObjets;
 private void Awake() {
     ObjectPoolInstace = this;
-}
-private void Start() {
+
     pooledObj = new List<GameObject>();
     GameObject objectInstance;
 
@@ -22,6 +21,9 @@ private void Start() {
         pooledObj.Add(objectInstance);
 
     }
+    
+}
+private void Start() {
     
 }
 
